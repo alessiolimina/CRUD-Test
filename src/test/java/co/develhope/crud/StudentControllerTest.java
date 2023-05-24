@@ -61,8 +61,8 @@ class StudentControllerTest {
 
     private Student createAStudent() throws Exception {
         Student student = new Student();
-        student.setName("Paul");
-        student.setSurname("Burns");
+        student.setName("Alessio");
+        student.setSurname("Limina");
         student.setWorking(true);
         return createAStudent(student);
     }
@@ -79,8 +79,8 @@ class StudentControllerTest {
 
     private MvcResult createAStudentRequest() throws Exception {
         Student student = new Student();
-        student.setName("Paul");
-        student.setSurname("Burns");
+        student.setName("Alessio");
+        student.setSurname("Limina");
         student.setWorking(true);
         return createAStudentRequest(student);
     }
@@ -126,7 +126,7 @@ class StudentControllerTest {
     void updateStudent() throws Exception{
         Student student = createAStudent();
 
-        String newName = "Frank";
+        String newName = "Matteo";
         student.setName(newName);
 
         String studentJSON = objectMapper.writeValueAsString(student);

@@ -23,8 +23,8 @@ public class StudentServiceTest {
     @Test
     void checkStudentActivation() throws Exception {
         Student student = new Student();
-        student.setName("Paul");
-        student.setSurname("Burns");
+        student.setName("Alessio");
+        student.setSurname("Limina");
         student.setWorking(true);
 
         Student studentFromDB = studentRepository.save(student);
